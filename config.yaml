@@ -1,0 +1,28 @@
+title: "STEINsekte"
+pages: ./src/pages
+images: ./src/images
+assets: ./src/static
+templates: ./templates
+output: .
+
+image_sizes: 
+  - 1920
+  - 200
+  - 80
+
+menu:
+  - title: Galerie
+    description: Die STEINzeit wurde nach uns benannt. Da gibt es eine Menge Erinnerungen
+    href: gallery.html
+  - title: Mitglied werden
+    description: Mitglied werden in der steinigsten Sekte Bonns!
+    href: member.html
+  - title: Ehrenmitglieder
+    description: Obelix, Rudolf Steiner,...
+    href: honor.html
+  - title: Freund & Feind
+    description: Igitt! Kängurus
+    href: https://kuerbiskopf38.github.io/kaengucrew/
+  - title: Über uns
+    description: Steinhart! Kristallklar! Marmorglatt!
+    href: about.html

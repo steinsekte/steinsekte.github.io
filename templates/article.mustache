@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="die STEINsekte">
+        <title>{{ page.meta.title }} | {{ site.title }}</title>
+        <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+        <script src="https://hypothes.is/embed.js" async></script>
+        <link href="./styles.css" rel="stylesheet">
+        <meta property="og:image" content="{{ page.meta.image.src }}">
+        <style>
+        {{# page.meta.colors.background }}
+        body { background-color: {{ page.meta.colors.background }}; }
+        {{/ page.meta.colors.background }}
+
+        {{# page.meta.colors.accent }}
+        h1 { border-left-color: {{ page.meta.colors.accent }}; }
+        {{/ page.meta.colors.accent }}
+        
+        {{# page.meta.colors.footer.background }}
+        footer { background-color: {{ page.meta.colors.footer.background }}; }
+        {{/ page.meta.colors.footer.background }}
+        
+        {{# page.meta.colors.footer.foreground }}
+        footer { color: {{ page.meta.colors.footer.foreground }}; }
+        footer img { border-color: {{ page.meta.colors.footer.foreground }}; }
+        {{/ page.meta.colors.footer.foreground }}
+        {{# page.is_index }}
+        html {
+            background: url(images/stein_free.jpg) no-repeat center top fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        {{/ page.is_index}}
+        {{^ page.is_index }}
+        main {
+            padding: 20px;
+        }
+        {{/ page.is_index}}
+        </style>
+    </head>
+    <body>
+        <main>
+            <nav>
+                <a title="auf Stein klicken für Startseite" href="./"><img src="images/rock-576669.svg"></a>
+                <div>
+                    <ul>
+                       {{# site.menu }}
+                            <li><a title="{{ description }}" href="{{ href }}">{{ title }}</a></li>
+                        {{/ site.menu }}
+                    </ul>
+                </div>
+            </nav>
+
+            {{^ page.is_index }}
+                <header>
+                    <h1>{{ site.title }}: {{ page.meta.title }}</h1>
+                </header>
+            {{/ page.is_index }}
+            {{# page.is_index }}
+                <h1>{{ site.title }}</h1>
+            {{/ page.is_index }}
+            {{{ content }}}
+        </main>
+
+        <footer>&copy; 2022 die STEINsekte<br>
+            <a href="mailto:labern@steinsekte.xyz?subject=Laberrababer">Labern</a>
+        </footer>
+    </body>
+</html>
