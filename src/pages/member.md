@@ -2,6 +2,8 @@
 title: Mitglied werden
 ---
 
+Das Leben ohne MitSTEINe ist doch sinnlos. Darum werde schnell Mitglied bei den STEINen. Tu's! Uns fällt ein STEIN vom Herzen :) 
+
 <script>
 function check(form) {
     if (form.name.value=='' || form.email.value=='' || form.bew.value=='') {
