@@ -9,6 +9,7 @@ main {
 }
 main > h1 {
   width: 50%;
+  line-height: 1.0em;
   text-align: center;
   margin: 40% auto 0 auto;
   color: white;
