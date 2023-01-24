@@ -13,7 +13,7 @@ function check(form) {
     return true;   
 }
 </script>
-<form method="GET" 
+<form method="POST" 
     action="https://lena.pro/reg.php" 
     enctype="application/x-www-form-urlencoded"
     onsubmit="return check(this);">
