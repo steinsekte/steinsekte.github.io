@@ -11,6 +11,9 @@ image_sizes:
   - 80
 
 menu:
+  - title: Start
+    description: Zur Startseite mit dem großen STEIN
+    href: index.html
   - title: Galerie
     description: Die STEINzeit wurde nach uns benannt. Da gibt es eine Menge Erinnerungen
     href: gallery.html
