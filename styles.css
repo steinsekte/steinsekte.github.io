@@ -14,7 +14,7 @@ main > h1 {
   color: white;
   text-shadow: 3px 3px 4px #777;
 }
-main > p {
+main > p { /*Umzug*/
   width: 40%;
   margin: 20px auto;
   background: rgba(255,255,255,0.5);
